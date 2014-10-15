@@ -20,6 +20,9 @@ class Registrant(models.Model):
         else:
             return False
 
+    def __unicode__(self):
+        return unicode("%s: <%s>" % (self.name, self.email))
+
     def save(self, *args, **kwargs):
         if not self.secret:
             self.secret = uuid.uuid4().hex
