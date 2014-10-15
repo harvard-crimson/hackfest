@@ -10,5 +10,5 @@ urlpatterns = patterns('',
 )
 
 urlpatterns += patterns('hackserver.regconfirm.views',
-    url(r'^confirm-reg/$', 'confirm_reg', name='confirm_reg'),
+    url(r'^confirm/$', 'confirm_reg', name='confirm_reg'),
 )
