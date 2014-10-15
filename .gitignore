@@ -1,0 +1,10 @@
+local_settings.py
+CACHE/
+django.db
+*.py[co]
+*.swp
+.DS_Store
+._*
+pip-log.txt
+.vagrant
+crimsononline/static/march-madness
