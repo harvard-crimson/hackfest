@@ -14,3 +14,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+STATIC_URL = '/static/'
+# STATIC_ROOT = '/path/to/static/files' # fill this in to collectstatic

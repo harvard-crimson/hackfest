@@ -27,6 +27,10 @@ ALLOWED_HOSTS = ['.harvardhackfest.com', ]
 
 ROOT_URLCONF = 'hackserver.urls'
 
+STATICFILES_DIRS = (
+    os.path.join(_PROJECT_ROOT, "hackserver", "static"),
+)
+
 TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.Loader',
 )
@@ -62,8 +66,6 @@ INSTALLED_APPS = (
 
     'hackserver.regconfirm',
 )
-
-STATIC_URL = 'http://harvardhackfest.com/'
 
 try:
     from local_settings import *
