@@ -21,7 +21,7 @@ class Registrant(models.Model):
             return False
 
     def __unicode__(self):
-        return unicode("%s: <%s>" % (self.name, self.email))
+        return unicode("%s <%s>" % (self.name, self.email))
 
     def save(self, *args, **kwargs):
         if not self.secret:
