@@ -22,24 +22,10 @@ USE_L10N = True
 
 USE_TZ = True
 
-SITE_ID = 1
-
-ADMINS = ( )
-
-MANAGERS = ADMINS
-
-INTERNAL_IPS = ( )
-
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ['.harvardhackfest.com', ]
 
 ROOT_URLCONF = 'hackserver.urls'
-
-STATICFILES_FINDERS = ( 
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
-)
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.Loader',
