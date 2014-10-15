@@ -133,7 +133,7 @@ def deploy(branch=None, first_time=False):
     except:
         pass
         
-    # deploy_static()
+    deploy_static()
     symlink_current_release()
     sync(first_time=first_time)
     migrate(first_time=first_time)
