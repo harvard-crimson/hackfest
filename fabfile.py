@@ -354,7 +354,7 @@ def deploy_static():
     except KeyError:
         run_or_sudo('%(path)s/venv/bin/python %(path)s/releases/current/manage.py collectstatic --noinput' % env)
 
-    if env.get('compress_offline', True):
+    if env.get('compress_offline', False):
         try:
             run_or_sudo('%(path)s/venv/bin/python %(path)s/releases/%(release)s/manage.py compress' % env)
         except KeyError:
