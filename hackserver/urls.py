@@ -9,7 +9,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^comp/$', RedirectView.as_view(url='https://docs.google.com/forms/d/1UYQ5Eu30gRtwCel7oERN085Itg3K9-E4IEjS-zYmQqo/viewform'))
-    url(r'^comp/$', RedirectView.as_view(url='https://docs.google.com/forms/d/1p0GfscDPGZWACK79pODGwaPh8dYXKMduMFAPf5R-ggQ/viewform'))
+    url(r'^projects/$', RedirectView.as_view(url='https://docs.google.com/forms/d/1p0GfscDPGZWACK79pODGwaPh8dYXKMduMFAPf5R-ggQ/viewform'))
 )
 
 urlpatterns += patterns('hackserver.regconfirm.views',
